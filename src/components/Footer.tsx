@@ -141,7 +141,7 @@ export function Footer() {
             © {new Date().getFullYear()} Raja Vapestore. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            🇮🇩 Made with ❤️ in Indonesia
+            Made by queen in Indonesia
           </p>
         </div>
       </div>

@@ -39,7 +39,7 @@ export function Hero() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up opacity-0 animate-delay-200">
+          <p className="text-md md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up opacity-0 animate-delay-200 font-light">
             Temukan koleksi premium vape, pod, dan e-liquid terbaik. 
             Kualitas terjamin, pengalaman vaping yang tak tertandingi.
           </p>
