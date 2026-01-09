@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { NumberTicker } from "@/components/NumberTicker";
 import { RiWhatsappLine, RiInstagramLine, RiMapPinLine } from "react-icons/ri";
 
 export function Hero() {
@@ -105,19 +106,30 @@ export function Hero() {
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 animate-fade-in-up opacity-0 animate-delay-400">
-            {[
-              { value: "1000+", label: "Produk" },
-              { value: "50+", label: "Brand Premium" },
-              { value: "10K+", label: "Pelanggan Puas" },
-              { value: "24/7", label: "Layanan" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-white mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                <NumberTicker value={1000} suffix="+" />
               </div>
-            ))}
+              <div className="text-sm text-muted-foreground">Produk</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                <NumberTicker value={50} suffix="+" />
+              </div>
+              <div className="text-sm text-muted-foreground">Brand Premium</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                <NumberTicker value={10000} suffix="+" />
+              </div>
+              <div className="text-sm text-muted-foreground">Pelanggan Puas</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                24/7
+              </div>
+              <div className="text-sm text-muted-foreground">Layanan</div>
+            </div>
           </div>
         </div>
 
